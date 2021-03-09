@@ -1,0 +1,16 @@
+<h1>Create new article Here</h1>
+
+<%= form_with scope: :article, url: articles_path, local: true do |f| %>
+<div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+</div>
+<div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+</div>
+<div>
+  <%= f.submit %>
+</div>
+<% end %>
+
